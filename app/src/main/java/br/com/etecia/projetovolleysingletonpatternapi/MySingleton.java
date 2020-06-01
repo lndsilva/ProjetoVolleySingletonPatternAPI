@@ -7,10 +7,13 @@ import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.Volley;
 
 public class MySingleton {
+
+    //Atributos ou variáveis globais conforme documentação do VolleyApi
     private static MySingleton myInstance;
     private RequestQueue requestQueue;
     private static Context myContext;
 
+    //Construtor do objeto VolleyApi
     public MySingleton(Context context) {
         myContext = context;
         requestQueue = getRequestQueue();

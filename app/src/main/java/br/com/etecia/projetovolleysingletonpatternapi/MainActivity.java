@@ -15,7 +15,7 @@ import com.android.volley.toolbox.StringRequest;
 public class MainActivity extends AppCompatActivity {
     Button btnAcessarServer;
     TextView txtRespostaWeb;
-    String server_url = "http://192.168.100.5/projetovolleyapi/helloserver.php";
+    String server_url = "http://192.168.100.5/Projeto3HDES-Api/resposta.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
