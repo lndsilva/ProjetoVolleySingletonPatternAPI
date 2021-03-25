@@ -13,6 +13,7 @@ public class MySingleton {
     private RequestQueue requestQueue;
     private static Context myContext;
 
+
     //Construtor do objeto VolleyApi
     public MySingleton(Context context) {
         myContext = context;
@@ -35,6 +36,5 @@ public class MySingleton {
 
     public <T> void addToRequestque(Request<T> request) {
         requestQueue.add(request);
-
     }
 }

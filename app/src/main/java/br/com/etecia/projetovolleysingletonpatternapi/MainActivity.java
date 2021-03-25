@@ -15,7 +15,7 @@ import com.android.volley.toolbox.StringRequest;
 public class MainActivity extends AppCompatActivity {
     Button btnAcessarServer;
     TextView txtRespostaWeb;
-    String server_url = "http://192.168.100.5/Projeto3HDES-Api/resposta.php";
+    String server_url = "http://192.168.100.13/projetovolleyapi/resposta.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
                         }, new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError error) {
-                        txtRespostaWeb.setText("Error...");
+                        txtRespostaWeb.setText("Error ao conectar o servidor WEB");
                         error.printStackTrace();
                     }
                 });
